@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ушинський Юрій</title>
+		<link rel="stylesheet" href="./Test.css">
+		<script type="text/javascript" src="jQuery.js"></script>
+		<script type="text/javascript" src="Test.js"></script>
+	</head>
+	<body bgcolor=antiquewhite>
+		<div class="second-container-grid">
+			<div class="item item1">
+				<div class="container">
+					<div class="slider">
+						<div class="slider-line">
+							<img src="./Image/pizza1.png" alt="">
+							<img src="./Image/pizza2.png" alt="">
+							<img src="./Image/pizza3.png" alt="">
+							<img src="./Image/pizza4.png" alt="">
+							<img src="./Image/pizza5.png" alt="">
+							<img src="./Image/pizza6.png" alt="">
+						</div>
+					</div>
+					<button class="slider-next">Slider</button>
+				</div>
+				<script src="Slider.js"></script>
+			</div>
+			<div class="item item2"></div>
+			<div class="item item3">
+				<h1 class="visual1">Замовлення Піци</h1>
+				
+				<h1 class="visual2">Відомості про клієнта</h1>
+			</div>
+			<div class="item item4">
+				<h2 class="visual1">Розмір піци</h2>
+				<table class="visual1" id="rad">
+					<tr>
+						<td><input class="visual1" type="radio" name="poshuk" id="rad1"><a class="visual1">Мала</a></input></td>
+						<td><input class="visual1" type="radio" name="poshuk" id="rad2" checked><a class="visual1">Середня</a></input></td>
+						<td><input class="visual1" type="radio" name="poshuk" id="rad3"><a class="visual1">Велика</a></input></td>
+					</tr>
+				</table>
+				
+				<table class="visual2">
+					<tr>
+						<td>Ім'я:</td>
+						<td><input id="val1"></td>
+					</tr>
+					<tr>
+						<td>Адреса:</td>
+						<td><input id="val2"></td>
+					</tr>
+					<tr>
+						<td>Номер телефону:</td>
+						<td><input id="val3"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="item item5">
+				<h2 class="visual1">Додаткові Інгридієнти:</h2>
+				<table class="visual1">
+					<tr>
+						<th>Сири:</th>
+						<th>М'ясо:</th>
+						<th>Овочі:</th>
+						<th>Спеції та зелень:</th>
+					</tr>
+					<tr>
+						<td><input type="checkbox" id="chek1">моцарела</td>
+						<td><input type="checkbox" id="chek2">шинка</td>
+						<td><input type="checkbox" id="chek3">помідори</td>
+						<td><input type="checkbox" id="chek4">базилік</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" id="chek5">пармезан</td>
+						<td><input type="checkbox" id="chek6">салямі</td>
+						<td><input type="checkbox" id="chek7">перець</td>
+						<td><input type="checkbox" id="chek8">орегано</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" id="chek9">чедер</td>
+						<td><input type="checkbox" id="chek10">курка</td>
+						<td><input type="checkbox" id="chek11">цибуля</td>
+						<td><input type="checkbox" id="chek12">петрушка</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="checkbox" id="chek13">філе</td>
+						<td><input type="checkbox" id="chek14">гриби</td>
+						<td><input type="checkbox" id="chek15">часникова сіль</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="checkbox" id="chek16">ковбаски</td>
+						<td><input type="checkbox" id="chek17">оливки</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="checkbox" id="chek18">креветки</td>
+						<td><input type="checkbox" id="chek19">ананаси</td>
+						<td></td>
+					</tr>
+				</table>
+				<br><button class="visual1" id="next" type="button">Далі</button>
+				
+				<br><button class="visual2" id="but2" type="button">Підтвердити замовлення</button>
+			</div>
+		</div>
+		
+		<button class="visual3" id="restart" type="button">Зробити нове замовлення </button>
+		<button class="visual3" id="massive" type="button">Показати/Сховати таблицю</button>
+		<!--table border="1" id="array">
+			<tr>
+				<td>ID</td>
+				<td>Ім'я</td>
+				<td>Прізвище</td>
+				<td>Електронна пошта</td>
+			</tr>
+			<tr id="cloner">
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			
+		</table-->
+		<ul class="visual3 masive" id="clon">Записи</ul>
+	</body>
+</html>
+
+<!--
+<h1>текст</h1> - заголовок
+	align=center - розташування тексту
+<br> - перехід на новий рядок
+<hr> - горизонтальна лінія
+<body>
+	background="URL" - картинка на фон сторінки
+	bgcolor=колір - колір фону
+	text=колір - колір тексту
+	link=колір - колір посилань на сторінці
+	alink=колір - колір посилань під час натискання
+	vlink=колір - колір переглянутих посилань
+<pre></pre> - відформатований текст зберігає усі пробіли
+<B></B> - жирний текст
+<I></I> - курсив текст
+<U></U> - підкреслення тексту
+<S></S> - перекреслений текст
+<SUP></SUP> - верхній індекс
+<SUB></SUB> - нижній індекс
+<basefont> - діє на весь текст написаний нижче
+	face
+	size=розмір шрифту
+	color=колір 
+<ol></ol> - нумерований список
+<ul></ul> - ненумерований список
+<li></li> - елемент списку
+<table></table> - опис таблиці
+	<tr></tr> - рядок таблиці
+	<td></td> - комірка у рядку
+	<th></th> - заголовок таблиці
+
+-->
